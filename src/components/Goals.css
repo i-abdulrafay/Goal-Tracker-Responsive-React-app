@@ -1,0 +1,168 @@
+.goals-container {
+  padding: 20px;
+}
+
+.add-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #ffdbb0;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  transform: rotate(90deg) scale(1.1);
+  background-color: #f8babf;
+}
+
+
+.goal-form {
+  background-color: #fff;
+  border: 2px solid #f8babf;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  max-height: 1000px;
+  opacity: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+
+.goal-form input,
+.goal-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.goal-form.hidden {
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  padding: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+
+.goal-form button {
+  padding: 10px;
+  background-color: #f8babf;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.goal-table {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.goal-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.goal-row.heading {
+  background-color: #ffdbb0;
+  font-weight: bold;
+}
+
+.goal-row > div {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.goal-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.goal-card {
+  background-color: #ffeee6;
+  border: 2px solid #f8babf;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.goal-card:hover {
+  transform: scale(1.02);
+}
+
+.goal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.goal-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.goal-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.goal-card p {
+  font-size: 16px;
+  margin: 0;
+  color: #444;
+}
+
+.delete-btn {
+  margin-top: 12px;
+  align-self: flex-end;
+  padding: 6px 10px;
+  background-color: #f8babf;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background-color: #e58e94;
+}
+
+
