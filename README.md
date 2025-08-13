@@ -1,12 +1,28 @@
-# React + Vite
+# Goal Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based daily goal tracking app that allows users to set, complete, and delete goals while staying motivated with quotes fetched from an external API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Add daily goals with ease
+- Mark goals as complete
+- Delete goals when no longer needed
+- Fetch and display motivational quotes from an external API
+- Simple, responsive, and clean UI
+- Local state management with React hooks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Technologies
+
+- React
+- CSS 
+- Fetch API (for motivational quotes)
+- JavaScript ES6+
+
+---
+
+   ```bash
+   git clone https://github.com/yourusername/goal-tracker.git
